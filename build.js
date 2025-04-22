@@ -88,7 +88,7 @@ try {
         copyDir(srcPath, destPath);
       } else {
         fs.copyFileSync(srcPath, destPath);
-      }
+       }
     }
   };
   
