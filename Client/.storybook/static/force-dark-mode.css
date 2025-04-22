@@ -1,0 +1,137 @@
+/* Force Dark Mode Styles */
+
+/* Apply to all elements */
+html.dark,
+html.dark-mode,
+body.dark,
+body.dark-mode,
+.dark,
+.dark-mode {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+/* Apply to all elements inside dark mode */
+html.dark *,
+html.dark-mode *,
+body.dark *,
+body.dark-mode *,
+.dark *,
+.dark-mode * {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+  border-color: #374151 !important;
+}
+
+/* Exceptions for color swatches */
+html.dark .w-16.h-16,
+html.dark-mode .w-16.h-16,
+body.dark .w-16.h-16,
+body.dark-mode .w-16.h-16,
+.dark .w-16.h-16,
+.dark-mode .w-16.h-16 {
+  background-color: unset !important;
+}
+
+/* Force dark mode on iframes */
+html.dark iframe,
+html.dark-mode iframe,
+body.dark iframe,
+body.dark-mode iframe,
+.dark iframe,
+.dark-mode iframe {
+  background-color: #111827 !important;
+}
+
+/* Force dark mode on Storybook UI */
+.dark .sidebar-container,
+.dark-mode .sidebar-container,
+.dark .sidebar-header,
+.dark-mode .sidebar-header,
+.dark .sidebar-item,
+.dark-mode .sidebar-item {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+/* Force dark mode on Storybook canvas */
+.dark #storybook-preview-iframe,
+.dark-mode #storybook-preview-iframe {
+  background-color: #111827 !important;
+}
+
+/* Override any light backgrounds */
+.dark [class*="bg-white"],
+.dark-mode [class*="bg-white"],
+.dark [class*="bg-gray"],
+.dark-mode [class*="bg-gray"],
+.dark [class*="bg-neutral"],
+.dark-mode [class*="bg-neutral"] {
+  background-color: #111827 !important;
+}
+
+/* Override any dark text */
+.dark [class*="text-black"],
+.dark-mode [class*="text-black"],
+.dark [class*="text-gray"],
+.dark-mode [class*="text-gray"],
+.dark [class*="text-neutral"],
+.dark-mode [class*="text-neutral"] {
+  color: #ffffff !important;
+}
+
+/* Force dark mode on Storybook manager */
+.dark .sidebar-header,
+.dark-mode .sidebar-header,
+.dark .sidebar-subheading,
+.dark-mode .sidebar-subheading {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+/* Force dark mode on Storybook toolbar */
+.dark .os-content,
+.dark-mode .os-content {
+  background-color: #111827 !important;
+}
+
+/* Force dark mode on Storybook panels */
+.dark .panel,
+.dark-mode .panel {
+  background-color: #111827 !important;
+}
+
+/* Force dark mode on Storybook tabs */
+.dark .tabbutton,
+.dark-mode .tabbutton {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+/* Force dark mode on Storybook canvas */
+.dark .docs-story,
+.dark-mode .docs-story {
+  background-color: #111827 !important;
+}
+
+/* Force dark mode on Storybook docs */
+.dark .sbdocs,
+.dark-mode .sbdocs,
+.dark .sbdocs-content,
+.dark-mode .sbdocs-content {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+/* Force dark mode on Storybook preview */
+.dark .sb-show-main,
+.dark-mode .sb-show-main {
+  background-color: #111827 !important;
+}
+
+/* Force dark mode on all elements */
+.dark *:not(.w-16.h-16),
+.dark-mode *:not(.w-16.h-16) {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}

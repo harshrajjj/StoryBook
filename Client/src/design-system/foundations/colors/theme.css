@@ -1,0 +1,233 @@
+/**
+ * CSS Variables for Uzence Design System
+ * 
+ * This file defines CSS variables for all color tokens.
+ * These variables can be used throughout the application for consistent styling.
+ */
+
+:root {
+  /* Primary Colors */
+  --color-primary-50: #e6f1ff;
+  --color-primary-100: #cce3ff;
+  --color-primary-200: #99c7ff;
+  --color-primary-300: #66abff;
+  --color-primary-400: #338fff;
+  --color-primary-500: #0073ff;
+  --color-primary-600: #005cd9;
+  --color-primary-700: #0044b3;
+  --color-primary-800: #002d8c;
+  --color-primary-900: #001766;
+
+  /* Secondary Colors */
+  --color-secondary-50: #f0f4ff;
+  --color-secondary-100: #e0e9ff;
+  --color-secondary-200: #c2d3ff;
+  --color-secondary-300: #a3bdff;
+  --color-secondary-400: #85a7ff;
+  --color-secondary-500: #6691ff;
+  --color-secondary-600: #5274cc;
+  --color-secondary-700: #3d5799;
+  --color-secondary-800: #293b66;
+  --color-secondary-900: #141e33;
+
+  /* Tertiary Colors */
+  --color-tertiary-50: #f5f0ff;
+  --color-tertiary-100: #ebe0ff;
+  --color-tertiary-200: #d6c2ff;
+  --color-tertiary-300: #c2a3ff;
+  --color-tertiary-400: #ad85ff;
+  --color-tertiary-500: #9966ff;
+  --color-tertiary-600: #7a52cc;
+  --color-tertiary-700: #5c3d99;
+  --color-tertiary-800: #3d2966;
+  --color-tertiary-900: #1f1433;
+
+  /* Neutral Colors */
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+  --color-neutral-950: #030712;
+
+  /* Semantic Colors */
+  --color-success-50: #ecfdf5;
+  --color-success-100: #d1fae5;
+  --color-success-200: #a7f3d0;
+  --color-success-300: #6ee7b7;
+  --color-success-400: #34d399;
+  --color-success-500: #10b981;
+  --color-success-600: #059669;
+  --color-success-700: #047857;
+  --color-success-800: #065f46;
+  --color-success-900: #064e3b;
+
+  --color-info-50: #eff6ff;
+  --color-info-100: #dbeafe;
+  --color-info-200: #bfdbfe;
+  --color-info-300: #93c5fd;
+  --color-info-400: #60a5fa;
+  --color-info-500: #3b82f6;
+  --color-info-600: #2563eb;
+  --color-info-700: #1d4ed8;
+  --color-info-800: #1e40af;
+  --color-info-900: #1e3a8a;
+
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-200: #fde68a;
+  --color-warning-300: #fcd34d;
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+  --color-warning-800: #92400e;
+  --color-warning-900: #78350f;
+
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-200: #fecaca;
+  --color-error-300: #fca5a5;
+  --color-error-400: #f87171;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+  --color-error-800: #991b1b;
+  --color-error-900: #7f1d1d;
+
+  /* Surface & Background Layers */
+  --color-surface-background: #ffffff;
+  --color-surface-foreground: #f9fafb;
+  --color-surface-card: #ffffff;
+  --color-surface-card-hover: #f3f4f6;
+  --color-surface-card-active: #e5e7eb;
+  --color-surface-border: #e5e7eb;
+  --color-surface-border-hover: #d1d5db;
+  --color-surface-divider: #e5e7eb;
+
+  /* Text Colors */
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-text-tertiary: #6b7280;
+  --color-text-disabled: #9ca3af;
+  --color-text-inverse: #ffffff;
+}
+
+/* Dark Mode Theme */
+.dark-mode {
+  /* Primary Colors */
+  --color-primary-50: #001766;
+  --color-primary-100: #002d8c;
+  --color-primary-200: #0044b3;
+  --color-primary-300: #005cd9;
+  --color-primary-400: #0073ff;
+  --color-primary-500: #338fff;
+  --color-primary-600: #66abff;
+  --color-primary-700: #99c7ff;
+  --color-primary-800: #cce3ff;
+  --color-primary-900: #e6f1ff;
+
+  /* Secondary Colors */
+  --color-secondary-50: #141e33;
+  --color-secondary-100: #293b66;
+  --color-secondary-200: #3d5799;
+  --color-secondary-300: #5274cc;
+  --color-secondary-400: #6691ff;
+  --color-secondary-500: #85a7ff;
+  --color-secondary-600: #a3bdff;
+  --color-secondary-700: #c2d3ff;
+  --color-secondary-800: #e0e9ff;
+  --color-secondary-900: #f0f4ff;
+
+  /* Tertiary Colors */
+  --color-tertiary-50: #1f1433;
+  --color-tertiary-100: #3d2966;
+  --color-tertiary-200: #5c3d99;
+  --color-tertiary-300: #7a52cc;
+  --color-tertiary-400: #9966ff;
+  --color-tertiary-500: #ad85ff;
+  --color-tertiary-600: #c2a3ff;
+  --color-tertiary-700: #d6c2ff;
+  --color-tertiary-800: #ebe0ff;
+  --color-tertiary-900: #f5f0ff;
+
+  /* Neutral Colors */
+  --color-neutral-950: #f9fafb;
+  --color-neutral-900: #f3f4f6;
+  --color-neutral-800: #e5e7eb;
+  --color-neutral-700: #d1d5db;
+  --color-neutral-600: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-400: #4b5563;
+  --color-neutral-300: #374151;
+  --color-neutral-200: #1f2937;
+  --color-neutral-100: #111827;
+  --color-neutral-50: #030712;
+
+  /* Semantic Colors */
+  --color-success-50: #064e3b;
+  --color-success-100: #065f46;
+  --color-success-200: #047857;
+  --color-success-300: #059669;
+  --color-success-400: #10b981;
+  --color-success-500: #34d399;
+  --color-success-600: #6ee7b7;
+  --color-success-700: #a7f3d0;
+  --color-success-800: #d1fae5;
+  --color-success-900: #ecfdf5;
+
+  --color-info-50: #1e3a8a;
+  --color-info-100: #1e40af;
+  --color-info-200: #1d4ed8;
+  --color-info-300: #2563eb;
+  --color-info-400: #3b82f6;
+  --color-info-500: #60a5fa;
+  --color-info-600: #93c5fd;
+  --color-info-700: #bfdbfe;
+  --color-info-800: #dbeafe;
+  --color-info-900: #eff6ff;
+
+  --color-warning-50: #78350f;
+  --color-warning-100: #92400e;
+  --color-warning-200: #b45309;
+  --color-warning-300: #d97706;
+  --color-warning-400: #f59e0b;
+  --color-warning-500: #fbbf24;
+  --color-warning-600: #fcd34d;
+  --color-warning-700: #fde68a;
+  --color-warning-800: #fef3c7;
+  --color-warning-900: #fffbeb;
+
+  --color-error-50: #7f1d1d;
+  --color-error-100: #991b1b;
+  --color-error-200: #b91c1c;
+  --color-error-300: #dc2626;
+  --color-error-400: #ef4444;
+  --color-error-500: #f87171;
+  --color-error-600: #fca5a5;
+  --color-error-700: #fecaca;
+  --color-error-800: #fee2e2;
+  --color-error-900: #fef2f2;
+
+  /* Surface & Background Layers */
+  --color-surface-background: #111827;
+  --color-surface-foreground: #1f2937;
+  --color-surface-card: #1f2937;
+  --color-surface-card-hover: #374151;
+  --color-surface-card-active: #4b5563;
+  --color-surface-border: #374151;
+  --color-surface-border-hover: #4b5563;
+  --color-surface-divider: #374151;
+
+  /* Text Colors */
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #e5e7eb;
+  --color-text-tertiary: #d1d5db;
+  --color-text-disabled: #6b7280;
+  --color-text-inverse: #111827;
+}

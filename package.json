@@ -1,0 +1,25 @@
+{
+  "name": "uzence-design-system",
+  "version": "1.0.0",
+  "description": "A comprehensive design system for enterprise applications with pure black dark mode",
+  "private": true,
+  "scripts": {
+    "start": "cd Client && npm run storybook"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshrajjj/uzence-design-system.git"
+  },
+  "keywords": [
+    "design-system",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "storybook"
+  ],
+  "author": "Harsh Kumar",
+  "license": "MIT"
+}

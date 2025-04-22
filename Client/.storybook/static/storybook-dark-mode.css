@@ -1,0 +1,124 @@
+/* Storybook Dark Mode Styles */
+
+/* Force dark mode on all elements */
+html.dark,
+html.dark-mode,
+html.dark *,
+html.dark-mode *,
+.dark,
+.dark-mode,
+.dark *,
+.dark-mode * {
+  color-scheme: dark !important;
+}
+
+/* Main background */
+html.dark,
+html.dark-mode,
+.dark,
+.dark-mode,
+html.dark body,
+html.dark-mode body,
+.dark body,
+.dark-mode body,
+html.dark .sb-show-main,
+html.dark-mode .sb-show-main,
+.dark .sb-show-main,
+.dark-mode .sb-show-main,
+html.dark .sb-main-padded,
+html.dark-mode .sb-main-padded,
+.dark .sb-main-padded,
+.dark-mode .sb-main-padded,
+html.dark .sb-show-main #root,
+html.dark-mode .sb-show-main #root,
+.dark .sb-show-main #root,
+.dark-mode .sb-show-main #root,
+html.dark .docs-story,
+html.dark-mode .docs-story,
+.dark .docs-story,
+.dark-mode .docs-story {
+  background-color: #111827 !important;
+  color: #f9fafb !important;
+}
+
+/* Storybook UI elements */
+html.dark .sidebar-header,
+html.dark-mode .sidebar-header,
+.dark .sidebar-header,
+.dark-mode .sidebar-header,
+html.dark .sidebar-subheading,
+html.dark-mode .sidebar-subheading,
+.dark .sidebar-subheading,
+.dark-mode .sidebar-subheading,
+html.dark .search-field,
+html.dark-mode .search-field,
+.dark .search-field,
+.dark-mode .search-field {
+  background-color: #111827 !important;
+  color: #f9fafb !important;
+  border-color: #374151 !important;
+}
+
+/* Storybook canvas */
+html.dark iframe,
+html.dark-mode iframe,
+.dark iframe,
+.dark-mode iframe {
+  background-color: #111827 !important;
+}
+
+/* Force dark mode on all iframes */
+html.dark iframe,
+html.dark-mode iframe,
+.dark iframe,
+.dark-mode iframe {
+  filter: invert(0) !important;
+}
+
+/* Ensure text is visible */
+html.dark .text-black,
+html.dark-mode .text-black,
+.dark .text-black,
+.dark-mode .text-black {
+  color: #f9fafb !important;
+}
+
+/* Ensure borders are visible */
+html.dark *,
+html.dark-mode *,
+.dark *,
+.dark-mode * {
+  border-color: #374151 !important;
+}
+
+/* Ensure shadows are visible */
+html.dark *,
+html.dark-mode *,
+.dark *,
+.dark-mode * {
+  box-shadow: none !important;
+}
+
+/* Ensure backgrounds are dark */
+html.dark [class*="bg-white"],
+html.dark-mode [class*="bg-white"],
+.dark [class*="bg-white"],
+.dark-mode [class*="bg-white"] {
+  background-color: #111827 !important;
+}
+
+/* Ensure text is visible */
+html.dark [class*="text-"],
+html.dark-mode [class*="text-"],
+.dark [class*="text-"],
+.dark-mode [class*="text-"] {
+  color: #f9fafb !important;
+}
+
+/* Exception for color swatches */
+html.dark .w-16.h-16,
+html.dark-mode .w-16.h-16,
+.dark .w-16.h-16,
+.dark-mode .w-16.h-16 {
+  background-color: attr(style) !important;
+}

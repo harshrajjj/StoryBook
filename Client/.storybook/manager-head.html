@@ -1,0 +1,95 @@
+<!-- Force BLACK background in dark mode -->
+<style>
+  /* Force BLACK background on EVERYTHING in dark mode */
+  html.dark,
+  html.dark-mode,
+  body.dark,
+  body.dark-mode,
+  .dark,
+  .dark-mode,
+  .dark body,
+  .dark-mode body,
+  .dark .sb-show-main,
+  .dark-mode .sb-show-main,
+  .dark .docs-story,
+  .dark-mode .docs-story,
+  .dark #storybook-root,
+  .dark-mode #storybook-root,
+  .dark .sb-main-padded,
+  .dark-mode .sb-main-padded,
+  .dark .sb-preview-content,
+  .dark-mode .sb-preview-content,
+  .dark .innerZoomElementWrapper,
+  .dark-mode .innerZoomElementWrapper,
+  .dark .os-content,
+  .dark-mode .os-content,
+  .dark .os-viewport,
+  .dark-mode .os-viewport,
+  .dark .os-padding,
+  .dark-mode .os-padding,
+  .dark iframe,
+  .dark-mode iframe {
+    background-color: #000000 !important;
+    background: #000000 !important;
+  }
+  
+  /* Force BLACK background on all elements */
+  .dark *:not(.w-16):not(.h-16),
+  .dark-mode *:not(.w-16):not(.h-16) {
+    background-color: #000000 !important;
+    background: #000000 !important;
+  }
+  
+  /* Ensure color swatches maintain their colors */
+  .dark .w-16.h-16,
+  .dark-mode .w-16.h-16 {
+    background-color: unset !important;
+    background: unset !important;
+  }
+</style>
+
+<script>
+  // Force BLACK background on all elements
+  (function() {
+    function forceBlackBackground() {
+      // Check if dark mode is active
+      const isDarkMode = document.documentElement.classList.contains('dark') || 
+                        document.documentElement.classList.contains('dark-mode') ||
+                        document.body.classList.contains('dark') ||
+                        document.body.classList.contains('dark-mode');
+      
+      if (isDarkMode) {
+        // Apply to document
+        document.documentElement.style.backgroundColor = '#000000';
+        document.documentElement.style.background = '#000000';
+        document.body.style.backgroundColor = '#000000';
+        document.body.style.background = '#000000';
+        
+        // Apply to all elements
+        const allElements = document.querySelectorAll('*');
+        allElements.forEach(el => {
+          if (!el.classList.contains('w-16') && !el.classList.contains('h-16')) {
+            el.style.backgroundColor = '#000000';
+            el.style.background = '#000000';
+          }
+        });
+        
+        // Apply to all iframes
+        const iframes = document.querySelectorAll('iframe');
+        iframes.forEach(iframe => {
+          iframe.style.backgroundColor = '#000000';
+          iframe.style.background = '#000000';
+        });
+      }
+    }
+    
+    // Apply on load
+    window.addEventListener('load', forceBlackBackground);
+    
+    // Apply on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', forceBlackBackground);
+    
+    // Apply every 100ms
+    setInterval(forceBlackBackground, 100);
+  })();
+</script>

@@ -1,0 +1,93 @@
+/* Simple Dark Mode Styles */
+
+/* Force BLACK background on EVERYTHING */
+.dark,
+.dark-mode,
+.dark body,
+.dark-mode body,
+.dark .sb-show-main,
+.dark-mode .sb-show-main,
+.dark .docs-story,
+.dark-mode .docs-story,
+.dark #storybook-root,
+.dark-mode #storybook-root,
+.dark .sb-main-padded,
+.dark-mode .sb-main-padded,
+.dark .sb-preview-content,
+.dark-mode .sb-preview-content,
+.dark .innerZoomElementWrapper,
+.dark-mode .innerZoomElementWrapper,
+.dark .os-content,
+.dark-mode .os-content,
+.dark .os-viewport,
+.dark-mode .os-viewport,
+.dark .os-padding,
+.dark-mode .os-padding,
+.dark .os-viewport-native-scrollbars-invisible,
+.dark-mode .os-viewport-native-scrollbars-invisible,
+.dark .os-viewport-native-scrollbars-overlaid,
+.dark-mode .os-viewport-native-scrollbars-overlaid,
+.dark iframe,
+.dark-mode iframe,
+.dark iframe body,
+.dark-mode iframe body,
+.dark iframe html,
+.dark-mode iframe html,
+.dark .css-1wjen9k,
+.dark-mode .css-1wjen9k,
+.dark .css-1e1vrft,
+.dark-mode .css-1e1vrft,
+.dark .css-1b9eqr9,
+.dark-mode .css-1b9eqr9,
+.dark .css-1fqxqco,
+.dark-mode .css-1fqxqco,
+.dark .css-1kjxbxv,
+.dark-mode .css-1kjxbxv,
+.dark .css-1wf16r9,
+.dark-mode .css-1wf16r9,
+.dark .css-1uxcjn6,
+.dark-mode .css-1uxcjn6,
+.dark .css-1v4qvbo,
+.dark-mode .css-1v4qvbo {
+  background-color: #000000 !important;
+  background: #000000 !important;
+}
+
+/* Force black background on all divs */
+.dark div:not(.w-16):not(.h-16),
+.dark-mode div:not(.w-16):not(.h-16),
+.dark section,
+.dark-mode section,
+.dark article,
+.dark-mode article,
+.dark aside,
+.dark-mode aside,
+.dark main,
+.dark-mode main,
+.dark header,
+.dark-mode header,
+.dark footer,
+.dark-mode footer,
+.dark nav,
+.dark-mode nav,
+.dark form,
+.dark-mode form {
+  background-color: #000000 !important;
+  background: #000000 !important;
+}
+
+/* Ensure text is visible in dark mode */
+.dark .text-black,
+.dark-mode .text-black,
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
+.dark p, .dark span, .dark label, .dark a,
+.dark-mode p, .dark-mode span, .dark-mode label, .dark-mode a {
+  color: #ffffff !important;
+}
+
+/* Ensure color swatches maintain their colors */
+.dark .w-16.h-16,
+.dark-mode .w-16.h-16 {
+  background-color: unset !important;
+}
