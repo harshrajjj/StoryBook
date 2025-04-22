@@ -4,7 +4,8 @@
   "description": "A comprehensive design system for enterprise applications with pure black dark mode",
   "private": true,
   "scripts": {
-    "start": "cd Client && npm run storybook"
+    "start": "cd Client && npm run storybook",
+    "build": "node build.js"
   },
   "engines": {
     "node": ">=18.0.0"
